@@ -26,3 +26,7 @@ Puppet Certification coming soon!
 
 Ldap Auth with Puppet : Clint Savage (Shadow-Soft)
 	- Using Puppet to push out config for common home with LDAP/AD authentication.
+	
+The weirdness about "random" compilation od actions corrected in Puppet 2.7 (Bobby's issue he ran into)
+
+Gotta keep stuff in version control.  Maybe have a merge master to promote things?
