@@ -52,3 +52,7 @@ Getting started with Puppet
 		- Puppet can talk to Cobbler!
 	- Rspec and Puppet to test configs
 	
+Puppet vs Chef
+	- One main difference: Puppet code compiled on master and pushed to client.  Chef compiles code on the client.
+	- Puppet: "tell it what you want" vs Chef: "Tell me how to get there"
+	- 
