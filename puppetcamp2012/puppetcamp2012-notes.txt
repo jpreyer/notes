@@ -36,3 +36,19 @@ Data and Code Separation with Puppet
 	- http://bit.ly/hierablog
 	- http://bit.ly/pcatl-demo
 	- paramerterized classes.
+	- hiera is a ruby gem!
+	
+Getting started with Puppet
+	- Have buy in!!!!  (we have that)
+	- Learn how to configure one machine!
+	- Use the Puppet labs Debian/Fedora packages (It's new)
+	- Read the docs!!!
+	- What are we doing right now
+		- Puppet ain't bash.  Don't make it do that.
+		- Learn how to make a yum repository! (for redhat / Centos)
+		- Make sure yum cache is cleared when you create a new package.
+		- Use yum post install to do scripting!
+		- Cobbler as an ENC (external node classification)
+		- Puppet can talk to Cobbler!
+	- Rspec and Puppet to test configs
+	
