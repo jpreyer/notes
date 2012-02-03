@@ -1,1 +1,11 @@
 There’s a Module for That! (9am - 10am)
+
+Puppet Forge (http://forge.puppetlabs.com/)
+		- Custom user provided modules for puppet.
+		- Not that big!
+		- To share a module
+			- Set up GitHub account
+			- Create Forge account
+			- Install puppet-module (gem install puppet-module, on a box that has puppet)
+			- Create and Package your module
+			- Release your module!
