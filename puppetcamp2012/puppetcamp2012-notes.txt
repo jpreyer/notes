@@ -30,3 +30,9 @@ Ldap Auth with Puppet : Clint Savage (Shadow-Soft)
 The weirdness about "random" compilation od actions corrected in Puppet 2.7 (Bobby's issue he ran into)
 
 Gotta keep stuff in version control.  Maybe have a merge master to promote things?
+
+Data and Code Separation with Puppet
+	- http://bit.ly/puppetdata
+	- http://bit.ly/hierablog
+	- http://bit.ly/pcatl-demo
+	- paramerterized classes.
