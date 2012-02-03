@@ -1,11 +1,28 @@
 There’s a Module for That! (9am - 10am)
 
-Puppet Forge (http://forge.puppetlabs.com/)
-		- Custom user provided modules for puppet.
-		- Not that big!
-		- To share a module
-			- Set up GitHub account
-			- Create Forge account
-			- Install puppet-module (gem install puppet-module, on a box that has puppet)
-			- Create and Package your module
-			- Release your module!
+Puppet Forge (http://forge.puppetlabs.com/) Kelsey Hightower
+	- Custom user provided modules for puppet.
+	- Not that big!
+	- To share a module
+		- Set up GitHub account
+		- Create Forge account
+		- Install puppet-module (gem install puppet-module, on a box that has puppet)
+		- Create and Package your module
+		- Release your module!
+			
+Geppetto : Kenn Hussey (Cloudsmith)
+	- Use modules from the beginning
+	- Use version control
+	- use sound design principles
+	- Geppetto
+		- A "Puppet IDE"
+		- set of tools and environments to help manage Puppet
+		- Puppet manifest editor
+		- validate Puppet manifests
+		- Implemented with Esclipse (Boooooo!)
+	- Worth checking out?
+	
+Puppet Certification coming soon!
+
+Ldap Auth with Puppet : Clint Savage (Shadow-Soft)
+	- Using Puppet to push out config for common home with LDAP/AD authentication.
