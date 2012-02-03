@@ -48,11 +48,19 @@ Getting started with Puppet
 		- Learn how to make a yum repository! (for redhat / Centos)
 		- Make sure yum cache is cleared when you create a new package.
 		- Use yum post install to do scripting!
-		- Cobbler as an ENC (external node classification)
+		- Cobbler as an ENC (external node classification ; see below)
 		- Puppet can talk to Cobbler!
 	- Rspec and Puppet to test configs
 	
 Puppet vs Chef
 	- One main difference: Puppet code compiled on master and pushed to client.  Chef compiles code on the client.
 	- Puppet: "tell it what you want" vs Chef: "Tell me how to get there"
-	- 
+
+Puppet and Data
+	- Every time there is a failure in prod, add an rspec test for that failure!
+	- ENCs (see http://docs.puppetlabs.com/guides/external_nodes.html)
+		- Puppet Dashboard
+		- Cobbler
+		- Foreman (http://theforeman.org/)
+		- LDAP
+	- YAML file per host/server to use in an ENC
