@@ -1,0 +1,132 @@
+Velocity 2011 (Thursday)
+
+**Friday 6/24 Allspaw and Souders webcast wrapping up Velocity 2011**
+
+World IPv6 Day
+  - Ian Flint (Yahoo!)
+  - 434 participants signed up for IPv6 day (6/8/2011)
+  - Pratice makes perfect.  For a major change, schedule one or more test runs.
+  - If you run a website, make it work with IPv6
+
+Facebook Open Compute & Other Infrastructure
+  - Jonathan Heiliger
+  - No surprise, Facebook grew like hell and had major scaling issues.
+  - Had to totally develop an new architecture
+    1. Software
+      - Get PHP to run faster (HPHP was the winner, PHP code into C++ code)
+      - 6x more efficient twith equal traffic
+    2. "Grid to Gates" rearchitecture  
+      - redesign ffrom power grid to motherboard
+  - Custom hardware
+    - Short or tall servers (1U vs 2U), split the difference and create 1.5U server
+      - fans use 2-4% power instead of 10-12% off the shelf
+    - battery cabinet
+      - distributes power to machines, replaces UPS
+    - server operations
+        - triplet racks (no screws, etc needed to rack a server)
+    - power delivery
+      - 480 volts to the batter cabinet and steps down from there, 2% power loss (vs 12% - 15% typical)
+    - data center
+      - removing UPS, huge savings
+      - no console access to any server
+    - make audacious bets and iterate quickly
+      - if someone tells you u r wrong, they may be betting against you
+    - small and hungry beats large and capable
+    - Make it work!!!!
+    - manage risk with hedges
+  - Leverage Openness
+    - Open Compute Project
+    - wanted to leverage smart folks without hiring them.
+    
+  
+Velocity Culture
+  - Jon Jenkins (Amazon)
+  - Capacity Planning : Spending money
+  - Capacity Optimization : Saving Money
+  - Project high traffic day plus 15% (to absorb traffic spikes)
+  - 11/10/2010, last physical web server turned off at Amazon.  All traffic for amazon.com is served by EC2
+  - Reduced spending on server capacity
+  - Apollo : at Amazon,allows a developer to deploy code whenever they want to.
+  - mean time between deployments : 11.6 seconds (weekday
+  - max # of deployments in a single hour: 1,079
+  - 75% reduction in outges triggered by software deployments since 2006
+  - ~0.001% of deployments cause an outage
+  - instrantaneous rollback (flipping between 2 groups of EC2 hosts)
+  
+  
+Artur on SSD's
+  - Artur Bergman
+  - YOU NEED SSDs IN YOUR LIFE NOW!!!
+  - Intel 320s, ignore PCI express cards and SLC!
+  
+  
+Cisco and Open Stack
+  - Lew Tucker (Cisco)
+  - Look at OpenStack!
+  - zzzzzzz.....
+  
+  
+State of the Infrastructure
+  - Rachel Chalmers
+  - got to it late.....
+
+
+Holistic Performance
+  - John Resig (JQuery?)
+  - http://jsperf.com/ to debug javascript
+  
+Pagespeed? (firefox plugin / chrome extension)
+
+http://pagespeed.googlelabs.com to run pagespeed on a site
+
+ShowSlow
+    
+
+Metrics Driven Engineering at Etsy
+  - Kellen Elliott-McCrea
+  - Deploy the site every 20 minutes at Etsy!
+  - Dev + Ops should have co-cusdody of metrics
+  - Open visibility to all metrics.
+  - Open source tools used by Etsy: Cacti, ganglia, graphite, splunk, nagios
+  - Ganglia
+    - cluster oriented
+  - Graphite
+    - flexible
+  - Logging central to metrics creation.
+  - Logster : turns logs into metrics
+  - statsd : helps collect
+  - use netcat to log into graphite
+  - everything something is deployed, they log it!
+  - (??) HoltWintersMetrics (??) : provide buisness metrics with confidence bands
+  - 16,000 metrics in Graphite (plus 32,000 metrics in Ganglia)
+  - Dashboards
+    - keep them simple!
+    - autorefresh them!
+  - Low MTTD (mean time to detect)!  Find mistakes quick and fix it quick!
+  - Etsy alerts on forum traffic!!!!  (way to see if something's broken!)
+  - all devs work off of master/trunk.  no branches/merge work!
+  - no traffic mirrored into stage/test env.  (** mirror traffic from prod to another environment!!!)
+  - Cut trunck to staging, then staging goes to production.
+  
+  
+Network Perspective on Application Performance
+  - VENDOR TALK!!!  :(
+  
+
+Post-Mortem Roundtable
+  - Mark Imbriaco (Heroku)
+    - status blog/page with 20 minute updates
+    - designated updater for status site
+    - one point person runs the outage
+  - John Allspaw (etsy)
+    - status blog / twitter feed
+  - Teresa Dietrich (WebMD VP of Tech Ops)
+    - Bah!
+  - Matt Hackett (Tumbler)
+    - developing an engineering blog to report tech issues in future
+  - At WebMD : SRE's (Site Reliability Engineers) who data collect on outages.
+  - how to keep post-mortem from turning into a 3 ring circus?
+    - No blame / finger pointing!
+    - Get some sleep after the outage, rest and then meet and have post-mortem!
+    - Assure your folks "you will not be fired, yelled at, pay docked!"
+    

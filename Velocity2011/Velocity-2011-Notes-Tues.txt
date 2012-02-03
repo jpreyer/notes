@@ -1,0 +1,56 @@
+Velocity 2001 (Tuesday)
+
+PERF MONITORING TOOLS
+
+WebPageTest
+
+  See : http://velocity.webpagetest.org/
+  Lightning talks / other talks Wednesday and Thursday
+  (**) Open source, can set up a private instance for yourself (dozens to that already)
+  
+Mobitest 
+  See how your site performs on a mobile device.
+  
+Showslow.com
+  Show Slow is an open source tool that helps monitor various website performance metrics over time.
+  
+dynaTrace
+
+
+STATS TALK
+  See notebook
+  
+  
+ADVANCED POSTMORTEM FU AND HUMAN ERROR 101
+  John Allspaw (VP TechOps, Etsy)
+  
+  - We work on complex, dynamic systems!
+  - Outages / Degredations : Fundamental Surprises
+  - #warroom IRC channel?
+  - IRC: great way to keep records of an outage (feed irc logs into Solr!)
+  - Annotation of graphs!  A good thing!
+  - Investigation basics
+      - Start
+      - Time detected and how.
+      - Time to Resolve (TTR)
+      - Stable "all clear!!"
+      - Impact time = TTR - Start
+      - Severity (not all outages are equal)
+          Severity 1, 2, 3, etc....
+  - Keep your community updated!  (Internal and External)
+    - Updates with substance!!!!
+  - Singular heroism not good. (sets bad culture!!!!)
+  - Human error isn't a cause, it's an effect. (of how you've build your org)
+  - Communicate near misses!
+  - Post Mortem meetings should be nameless and blameless!
+  - Punishing Deterrents is a losing proposition!!!!!
+  - holding people accountable != blaming people
+  - Empower people!
+  - Accountability = Responsibility + requisite Authority
+  - Read the books at the end of the slideshow!!!
+  
+  
+Managing the System Lifecycle and Configuration of Apache Hadoop and Other Distributed Systems
+  Phillip Zeyliger (Cloudera)
+  
+ - Marketing session, beginning nice explaining ways to manage many systems 
