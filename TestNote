@@ -1,4 +1,5 @@
 List example
 [] test1
 [] test2
-[] test3
+[x] test3
+[ ] test4
