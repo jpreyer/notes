@@ -1,0 +1,6 @@
+mongodb
+postgres
+Cassandra
+CouchDB
+Redis
+Riak
