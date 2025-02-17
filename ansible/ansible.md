@@ -1,5 +1,7 @@
 **Ansible Notes**
 
+**Source Video: [Ansible: From Basics to Guru](https://learning.oreilly.com/videos/ansible-from-basics) by Sander van Vugt** 
+
 * Control node is where Ansible software is installed
 * Ansible can be installed in differest ways
     * From distro repos (Gives you latest stable software)
@@ -37,6 +39,6 @@
     * Since Ansible 2.10, modules are a part of collections
         * a FQCN is used to refer to module names (ex: ansible.builtin.command)
     * In Ansible 2.9 and earlier, only the last part of the name was used.
-    
+
 
 
