@@ -35,10 +35,23 @@
 * Ansible ad-hoc commands
     * command line only solution to perform Ansible tasks on managed hosts.
     * Modules can be used in ad-hoc commands to perform tasks
+
 * Modules
     * Since Ansible 2.10, modules are a part of collections
         * a FQCN is used to refer to module names (ex: ansible.builtin.command)
     * In Ansible 2.9 and earlier, only the last part of the name was used.
+    * **ansible.builtin.command** : Generic module that allows you to run any command using Ansible
+    * **ansible.builtin.shell** : Uses bash shell to run commands, can use shell features like pipes and redirects
+    * **ansible.builtin.user** : Manages users
+    * **ansible.builtin.copy** : Copies files
+
+* Setting up Managed Hosts
+    * Minimal requirements to have a host managed by Ansible
+        * SSH running and reachable
+        * There is a user with admin privileges.
+    * Ad hoc user creation
+        * **ansible -i inventory ubuntu24-ansible -m user -a "name=ansible create_home=yes" -u jpreyer -b -k -K**
+
 
 
 
