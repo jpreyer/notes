@@ -64,6 +64,9 @@
 * Using Ad-hoc commands
     * 
 
+* Using ansible playbook
+    * 
+
 
 
 
