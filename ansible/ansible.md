@@ -52,6 +52,19 @@
     * Ad hoc user creation
         * **ansible -i inventory ubuntu24-ansible -m user -a "name=ansible create_home=yes" -u jpreyer -b -k -K**
 
+* Priviledge Escalation
+    * Can use -b -K command lin eoptions, but this requires entering a password.
+    * use sudo config locally to allow passwordless priviledge escalation, then use ansible copy module to copy the sudo config to managed nodes.
+
+* ansible.cfg
+    * Default: /etc/ansible/ansible.cfg (usually), but confirm with **ansible --version**
+    * Specific ansible.cfg files can be created in project directories
+    * Settings made at a more specific level will always override the generic settings.
+
+* Using Ad-hoc commands
+    * 
+
+
 
 
 
