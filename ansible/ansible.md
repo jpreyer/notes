@@ -2,6 +2,8 @@
 
 **Source Video: [Ansible: From Basics to Guru](https://learning.oreilly.com/videos/ansible-from-basics) by Sander van Vugt** 
 
+####Lesson 1####
+
 * Control node is where Ansible software is installed
 * Ansible can be installed in differest ways
     * From distro repos (Gives you latest stable software)
@@ -61,13 +63,47 @@
     * Specific ansible.cfg files can be created in project directories
     * Settings made at a more specific level will always override the generic settings.
 
+###Lesson 2###
+
 * Using Ad-hoc commands
-    * 
-
-* Using ansible playbook
-    * 
-
-
+    * Perfect for running one task on a managed host.
+    * Perfect for:
+        * Initial host setup
+        * Checking configurations on hostas
+    * Playbooks are used for more complex tasks that have dependency relations.
+    * Ansible modules
+        * Python scripts that will b executed on managed hosts
+        * More than 30000 modules available.
+    * Running ad hoc commands
+        * run with ansible command
+        * when running, inventory must be present and must specify what hosts to address.
+        * use -m to address specific module and -a for module args
+            * examples: 
+                * **ansible -i inventory rocky-hosts -m ansible.builtin.command -a reboot**
+                * **ansible -i inventory rocky1 -m ansible.builtin.user -a "name=anna state=present"**
+        * in ansible.cfgm you can specify the name of your inventory file undef [defaults] with inventory = \<filename\>
+    * Ansible Modules
+        * use FQCN when using them (modules are part of Ansible collections since 2.10)
+            * example: **ansible.builtin.command** verses **command**
+        * Collections allow for better management of large number of modules.
+        * List modules with **ansible-doc -l**
+        * Essential Ansible Modules
+            * **ansible.builtin.command** : runs arbitrary commands on managed nodes, but not through a shell
+            * **ansible.builtin.shell** : alternative to **command** and should be used then shell items like pipes and redirects are required.
+            * **ansible.builtin.raw** : runs the command without needing Python on node
+            * **ansible.builtin.package** : generic module for managing packages
+            * **ansible.builtin.user** : allows for user management
+        * Best practices
+            * Always use the most specific module you can find
+            * generic modules often lead to problems in situations where the desired state already exists. (**idempotency**, module should still work as expected is the current state already matched desired state.)
+    * Using ansible-doc
+        * Module docs is in ansible-doc
+        * **ansible-doc -l** will show all modules
+        * ansible-doc-modulename gives a details description of the module and its options.
+        * **ansible-doc \<module-name\>** will give details on the module
+    * **Examples**
+        * add user lisa: **ansible all -m user -a "name=lisa state=present"**
+        * remove user lisa: **ansible all -m user -a "name=lisa state=absent remove=true"**
 
 
 
