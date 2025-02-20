@@ -2,7 +2,7 @@
 
 **Source Video: [Ansible: From Basics to Guru](https://learning.oreilly.com/videos/ansible-from-basics) by Sander van Vugt** 
 
-####Lesson 1####
+### Lesson 1
 
 * Control node is where Ansible software is installed
 * Ansible can be installed in differest ways
@@ -63,7 +63,7 @@
     * Specific ansible.cfg files can be created in project directories
     * Settings made at a more specific level will always override the generic settings.
 
-###Lesson 2###
+### Lesson 2
 
 * Using Ad-hoc commands
     * Perfect for running one task on a managed host.
@@ -97,7 +97,7 @@
             * Always use the most specific module you can find
             * generic modules often lead to problems in situations where the desired state already exists. (**idempotency**, module should still work as expected is the current state already matched desired state.)
     * Using ansible-doc
-        * Module docs is in ansible-doc
+        * Module docs are in ansible-doc
         * **ansible-doc -l** will show all modules
         * ansible-doc-modulename gives a details description of the module and its options.
         * **ansible-doc \<module-name\>** will give details on the module
@@ -106,4 +106,20 @@
         * remove user lisa: **ansible all -m user -a "name=lisa state=absent remove=true"**
 
 
+### Lesson 3
+* Ansible Playbooks
+    * Playbooks are used to tun multiple tasks in orer
+    * Playbooks are used to define dependency relations between tasks
+    * Playbooks can use conditional statments
+    * In a playbook, one or more plays are defined.
+        * each play has a header that defines different properties (ex: hosts on which to run, etc...)
+        * in a play, one or more taks are defined
+        * Playbooks are written in YAML
+    * run a playbook names playbook.yaml with **ansible-playbook playbook.yaml**
+    * a playbook can definre one or more plays
 
+* Playbook Errors
+    * If a task fails on a specific host, further executions of tasks in the failing play is aborted on the host.
+    * use **ignore_errors: True** to continue execution anyway
+    * there is no easy way to undo mods that ahve been applied by a playbook (complex dependancies may exist between playbooks)
+    * only way to undo a playbook is to write a playbook that does opposite actions in reversed order.
