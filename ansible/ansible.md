@@ -123,3 +123,23 @@
     * use **ignore_errors: True** to continue execution anyway
     * there is no easy way to undo mods that ahve been applied by a playbook (complex dependancies may exist between playbooks)
     * only way to undo a playbook is to write a playbook that does opposite actions in reversed order.
+
+
+### Lesson 4
+* Ansible Tower
+    * Redhat web based platform to manage Ansible
+    * Adds features not found in CLI ansible
+        * Role based Access Control
+        * password caching
+        * Workflow designer
+    * AWX is the open source upstream of Ansible Tower
+    * Ansible Automation Platform (AAP)
+        * Redha solution that bundles different Ansible components.
+            * Ansible Engine (cli tool)
+            * Ansible Tower
+            * Content Collections: packages that bundle modules, roles and more
+            * Automation Hub: hosts certified collections for Ansible
+            * Automation Analytics: Insights for advanced Ansible managemt and analysis.
+    * [www.redhat.com](https://www.redhat.com) and [Ansible Galaxy](https://galaxy.ansible.com)
+
+* Installing Ansible Tower
