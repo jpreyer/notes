@@ -72,7 +72,7 @@
         * Checking configurations on hostas
     * Playbooks are used for more complex tasks that have dependency relations.
     * Ansible modules
-        * Python scripts that will b executed on managed hosts
+        * Python scripts that will be executed on managed hosts
         * More than 30000 modules available.
     * Running ad hoc commands
         * run with ansible command
