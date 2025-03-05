@@ -55,7 +55,7 @@
         * **ansible -i inventory ubuntu24-ansible -m user -a "name=ansible create_home=yes" -u jpreyer -b -k -K**
 
 * Priviledge Escalation
-    * Can use -b -K command lin eoptions, but this requires entering a password.
+    * Can use -b -K command line options, but this requires entering a password.
     * use sudo config locally to allow passwordless priviledge escalation, then use ansible copy module to copy the sudo config to managed nodes.
 
 * ansible.cfg
