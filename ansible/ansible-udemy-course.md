@@ -13,6 +13,8 @@
     * **autocmd FileType yaml setlocal ai ts=2 sw=2 et**
 
 ### Server Roles
-```
-test
-```
+Directory Structure
+location of playbooks -- > Roles --> (role name) --> tasks (Playbooks specific to this role)
+                                              |
+                                              |
+                                               ----> files (files to be copied to servers in role)
