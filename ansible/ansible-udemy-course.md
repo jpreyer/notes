@@ -28,4 +28,8 @@ location of playbooks -- > Roles
 
 ## Register vs Notify
 * Notify runs at end
-* If you have mutliple notify statements, (i.e.: restarting a service after a config change0, if will run only once at the very end as stated above.
+* If you have mutliple notify statements, (i.e.: restarting a service after a config change), if will run only once at the very end as stated above.
+* Notify runs handles found in handlers directory
+
+## Templates
+* ansible.builtin.templayte
