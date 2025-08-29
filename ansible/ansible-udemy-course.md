@@ -7,12 +7,12 @@
 ### Running Elevated Commands
 * 
 
-### Playbooks
+## Playbooks
 * Remember: yaml format is super particular!
 * line to add to .vimrc to make sure tab spaces are yaml compliant
     * **autocmd FileType yaml setlocal ai ts=2 sw=2 et**
 
-### Server Roles
+## Server Roles
 Directory Structure
 ```
 location of playbooks -- > Roles
@@ -32,4 +32,12 @@ location of playbooks -- > Roles
 * Notify runs handles found in handlers directory
 
 ## Templates
-* ansible.builtin.templayte
+* ansible.builtin.template
+
+## Ansible Galaxy
+* https://galaxy.ansible.com/ui/
+* Check out the roles from geerlingguy!
+
+
+## Ansible Pull
+
