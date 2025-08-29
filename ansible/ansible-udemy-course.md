@@ -18,5 +18,12 @@ Directory Structure
 location of playbooks -- > Roles --> (role name) --> tasks (Playbooks specific to this role)
                                               |
                                               |
+                                              |----> handlers (taks that can be called by notify in a playbook
+                                              |
+                                              |
                                                ----> files (files to be copied to servers in role)
 ```
+
+## Register vs Notify
+* Notify runs at end
+* If you have mutliple notify statements, (i.e.: restarting a service after a config change0, if will run only once at the very end as stated above.
