@@ -15,13 +15,15 @@
 ### Server Roles
 Directory Structure
 ```
-location of playbooks -- > Roles --> (role name) --> tasks (Playbooks specific to this role)
-                                              |
-                                              |
-                                              |----> handlers (taks that can be called by notify in a playbook
-                                              |
-                                              |
-                                               ----> files (files to be copied to servers in role)
+location of playbooks -- > Roles
+                            | Role_name
+                               |----> tasks (Playbooks specific to this role)
+                               |
+                               |----> templates (Jinja template files go here)
+                               |
+                               |----> handlers (taks that can be called by notify in a playbook
+                               |
+                               |----> files (files to be copied to servers in role)
 ```
 
 ## Register vs Notify
