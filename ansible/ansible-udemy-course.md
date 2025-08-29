@@ -14,7 +14,9 @@
 
 ### Server Roles
 Directory Structure
+```
 location of playbooks -- > Roles --> (role name) --> tasks (Playbooks specific to this role)
                                               |
                                               |
                                                ----> files (files to be copied to servers in role)
+```
