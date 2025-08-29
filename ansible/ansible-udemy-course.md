@@ -12,3 +12,7 @@
 * line to add to .vimrc to make sure tab spaces are yaml compliant
     * **autocmd FileType yaml setlocal ai ts=2 sw=2 et**
 
+### Server Roles
+```
+test
+```
