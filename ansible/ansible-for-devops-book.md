@@ -8,4 +8,4 @@
 - **templates**
 - **commands module
     - See https://docs.ansible.com/ansible/latest/collections/ansible/builtin/command_module.html for more info
-    - Inparticular, how does creates and removes parameters work
+    - In particular, how does creates and removes parameters work
