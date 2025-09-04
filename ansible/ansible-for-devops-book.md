@@ -6,4 +6,6 @@
 - **handlers**
     - Handlers are special kinds of tasks you run at the end of a play by adding the notify option to any of the tasks in that group. The handler will only be called if one of the tasks notifying the handler makes a change to the server (and doesn’t fail), and it will only be notified at the end of the play.
 - **templates**
-- 
+- **commands module
+    - See https://docs.ansible.com/ansible/latest/collections/ansible/builtin/command_module.html for more info
+    - Inparticular, how does creates and removes parameters work
