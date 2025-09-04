@@ -12,3 +12,6 @@
 - The command module is preferred over shell command, use shell when you need to pipe/redirect input|output to/from a command you are running.
 - **ansible.builtin.stat** - retrieve file status (https://docs.ansible.com/ansible/latest/collections/ansible/builtin/stat_module.html)
 - Look at installing Solr in chapter 4, good example to follow
+
+----- **Stopped at end of chapter 4** -----
+
